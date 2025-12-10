@@ -129,6 +129,7 @@
             // 
             txtSifreYeni.Location = new Point(332, 392);
             txtSifreYeni.Name = "txtSifreYeni";
+            txtSifreYeni.PasswordChar = '*';
             txtSifreYeni.Size = new Size(150, 31);
             txtSifreYeni.TabIndex = 8;
             // 

@@ -84,12 +84,13 @@
             // 
             lblSifreKaydet.BackColor = SystemColors.ActiveCaption;
             lblSifreKaydet.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            lblSifreKaydet.Location = new Point(440, 535);
+            lblSifreKaydet.Location = new Point(431, 528);
             lblSifreKaydet.Name = "lblSifreKaydet";
             lblSifreKaydet.Size = new Size(169, 42);
             lblSifreKaydet.TabIndex = 4;
-            lblSifreKaydet.Text = "Şifreyi Kaydet";
+            lblSifreKaydet.Text = "Şifreyi Güncelle";
             lblSifreKaydet.UseVisualStyleBackColor = false;
+            lblSifreKaydet.Click += lblSifreKaydet_Click;
             // 
             // btnGirisEkraninaDon
             // 
@@ -101,6 +102,7 @@
             btnGirisEkraninaDon.TabIndex = 5;
             btnGirisEkraninaDon.Text = "Giriş Ekranına Dön ";
             btnGirisEkraninaDon.UseVisualStyleBackColor = false;
+            btnGirisEkraninaDon.Click += btnGirisEkraninaDon_Click;
             // 
             // txtTCKontrol
             // 

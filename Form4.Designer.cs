@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             grpRandevuOlusturma = new GroupBox();
+            mtxtRandevuSaat = new MaskedTextBox();
+            lblRandevuSaati = new Label();
+            cmbBransSec = new ComboBox();
+            lblBransıSec = new Label();
             btnRandevuListesiYenile = new Button();
             lblRandevu = new Label();
             dgvRandevuTablosu = new DataGridView();
@@ -62,6 +66,8 @@
             cmbDoktorSec = new ComboBox();
             btnDegisiklikleriKaydet = new Button();
             btnKaydiSil = new Button();
+            btnKaydiDuzenle = new Button();
+            btnKaydıSilRandevu = new Button();
             grpRandevuOlusturma.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvRandevuTablosu).BeginInit();
             grpHizliHastaKaydi.SuspendLayout();
@@ -73,6 +79,10 @@
             // grpRandevuOlusturma
             // 
             grpRandevuOlusturma.BackColor = SystemColors.ActiveCaption;
+            grpRandevuOlusturma.Controls.Add(mtxtRandevuSaat);
+            grpRandevuOlusturma.Controls.Add(lblRandevuSaati);
+            grpRandevuOlusturma.Controls.Add(cmbBransSec);
+            grpRandevuOlusturma.Controls.Add(lblBransıSec);
             grpRandevuOlusturma.Controls.Add(btnRandevuListesiYenile);
             grpRandevuOlusturma.Controls.Add(lblRandevu);
             grpRandevuOlusturma.Controls.Add(dgvRandevuTablosu);
@@ -86,25 +96,63 @@
             grpRandevuOlusturma.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 162);
             grpRandevuOlusturma.Location = new Point(34, 35);
             grpRandevuOlusturma.Name = "grpRandevuOlusturma";
-            grpRandevuOlusturma.Size = new Size(487, 531);
+            grpRandevuOlusturma.Size = new Size(487, 630);
             grpRandevuOlusturma.TabIndex = 0;
             grpRandevuOlusturma.TabStop = false;
             grpRandevuOlusturma.Text = "Randevu Oluşturma";
             // 
+            // mtxtRandevuSaat
+            // 
+            mtxtRandevuSaat.Location = new Point(205, 220);
+            mtxtRandevuSaat.Mask = "00:00";
+            mtxtRandevuSaat.Name = "mtxtRandevuSaat";
+            mtxtRandevuSaat.Size = new Size(150, 34);
+            mtxtRandevuSaat.TabIndex = 4;
+            // 
+            // lblRandevuSaati
+            // 
+            lblRandevuSaati.AutoSize = true;
+            lblRandevuSaati.BackColor = SystemColors.ButtonHighlight;
+            lblRandevuSaati.Location = new Point(29, 223);
+            lblRandevuSaati.Name = "lblRandevuSaati";
+            lblRandevuSaati.Size = new Size(151, 28);
+            lblRandevuSaati.TabIndex = 26;
+            lblRandevuSaati.Text = "Randevu Saati :";
+            // 
+            // cmbBransSec
+            // 
+            cmbBransSec.FormattingEnabled = true;
+            cmbBransSec.Location = new Point(205, 68);
+            cmbBransSec.Name = "cmbBransSec";
+            cmbBransSec.Size = new Size(182, 36);
+            cmbBransSec.TabIndex = 25;
+            cmbBransSec.SelectedIndexChanged += cmbBransSec_SelectedIndexChanged;
+            // 
+            // lblBransıSec
+            // 
+            lblBransıSec.AutoSize = true;
+            lblBransıSec.BackColor = SystemColors.ButtonHighlight;
+            lblBransıSec.Location = new Point(29, 76);
+            lblBransıSec.Name = "lblBransıSec";
+            lblBransıSec.Size = new Size(110, 28);
+            lblBransıSec.TabIndex = 24;
+            lblBransıSec.Text = "Branş Seç :";
+            // 
             // btnRandevuListesiYenile
             // 
-            btnRandevuListesiYenile.Location = new Point(269, 486);
+            btnRandevuListesiYenile.Location = new Point(304, 583);
             btnRandevuListesiYenile.Name = "btnRandevuListesiYenile";
             btnRandevuListesiYenile.Size = new Size(166, 34);
             btnRandevuListesiYenile.TabIndex = 23;
             btnRandevuListesiYenile.Text = "Listeyi Güncelle";
             btnRandevuListesiYenile.UseVisualStyleBackColor = true;
+            btnRandevuListesiYenile.Click += btnRandevuListesiYenile_Click;
             // 
             // lblRandevu
             // 
             lblRandevu.AutoSize = true;
             lblRandevu.BackColor = SystemColors.ButtonHighlight;
-            lblRandevu.Location = new Point(59, 314);
+            lblRandevu.Location = new Point(45, 404);
             lblRandevu.Name = "lblRandevu";
             lblRandevu.Size = new Size(124, 28);
             lblRandevu.TabIndex = 10;
@@ -114,26 +162,29 @@
             // 
             dgvRandevuTablosu.BackgroundColor = SystemColors.ButtonHighlight;
             dgvRandevuTablosu.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvRandevuTablosu.Location = new Point(59, 355);
+            dgvRandevuTablosu.Location = new Point(50, 452);
             dgvRandevuTablosu.Name = "dgvRandevuTablosu";
             dgvRandevuTablosu.RowHeadersWidth = 62;
             dgvRandevuTablosu.Size = new Size(376, 125);
             dgvRandevuTablosu.TabIndex = 9;
+            dgvRandevuTablosu.CellClick += dgvRandevuTablosu_CellClick;
+            dgvRandevuTablosu.CellContentClick += dgvRandevuTablosu_CellContentClick;
             // 
             // btnRandevuEkle
             // 
-            btnRandevuEkle.Location = new Point(205, 252);
+            btnRandevuEkle.Location = new Point(331, 342);
             btnRandevuEkle.Name = "btnRandevuEkle";
             btnRandevuEkle.Size = new Size(150, 35);
             btnRandevuEkle.TabIndex = 8;
             btnRandevuEkle.Text = "Randevu Ekle";
             btnRandevuEkle.UseVisualStyleBackColor = true;
+            btnRandevuEkle.Click += btnRandevuEkle_Click;
             // 
             // lblHastaTCNo
             // 
             lblHastaTCNo.AutoSize = true;
             lblHastaTCNo.BackColor = SystemColors.ButtonHighlight;
-            lblHastaTCNo.Location = new Point(34, 200);
+            lblHastaTCNo.Location = new Point(29, 280);
             lblHastaTCNo.Name = "lblHastaTCNo";
             lblHastaTCNo.Size = new Size(135, 28);
             lblHastaTCNo.TabIndex = 7;
@@ -141,7 +192,7 @@
             // 
             // txtHastaTCNo
             // 
-            txtHastaTCNo.Location = new Point(205, 194);
+            txtHastaTCNo.Location = new Point(205, 277);
             txtHastaTCNo.Name = "txtHastaTCNo";
             txtHastaTCNo.Size = new Size(150, 34);
             txtHastaTCNo.TabIndex = 6;
@@ -150,7 +201,7 @@
             // 
             lblRandevuTarih.AutoSize = true;
             lblRandevuTarih.BackColor = SystemColors.ButtonHighlight;
-            lblRandevuTarih.Location = new Point(34, 133);
+            lblRandevuTarih.Location = new Point(29, 171);
             lblRandevuTarih.Name = "lblRandevuTarih";
             lblRandevuTarih.Size = new Size(156, 28);
             lblRandevuTarih.TabIndex = 5;
@@ -158,7 +209,7 @@
             // 
             // dtpRandevuTarihi
             // 
-            dtpRandevuTarihi.Location = new Point(205, 128);
+            dtpRandevuTarihi.Location = new Point(205, 171);
             dtpRandevuTarihi.Name = "dtpRandevuTarihi";
             dtpRandevuTarihi.Size = new Size(276, 34);
             dtpRandevuTarihi.TabIndex = 4;
@@ -167,7 +218,7 @@
             // 
             lblDoktorSecimi.AutoSize = true;
             lblDoktorSecimi.BackColor = SystemColors.ButtonHighlight;
-            lblDoktorSecimi.Location = new Point(34, 71);
+            lblDoktorSecimi.Location = new Point(29, 127);
             lblDoktorSecimi.Name = "lblDoktorSecimi";
             lblDoktorSecimi.Size = new Size(151, 28);
             lblDoktorSecimi.TabIndex = 3;
@@ -176,9 +227,9 @@
             // cmbDoktorSecimi
             // 
             cmbDoktorSecimi.FormattingEnabled = true;
-            cmbDoktorSecimi.Location = new Point(205, 73);
+            cmbDoktorSecimi.Location = new Point(205, 119);
             cmbDoktorSecimi.Name = "cmbDoktorSecimi";
-            cmbDoktorSecimi.Size = new Size(150, 36);
+            cmbDoktorSecimi.Size = new Size(182, 36);
             cmbDoktorSecimi.TabIndex = 2;
             // 
             // grpHizliHastaKaydi
@@ -232,6 +283,8 @@
             dgvHastalar.RowHeadersWidth = 62;
             dgvHastalar.Size = new Size(367, 138);
             dgvHastalar.TabIndex = 20;
+            dgvHastalar.CellClick += dgvHastalar_CellClick;
+            dgvHastalar.CellContentClick += dgvHastalar_CellContentClick;
             // 
             // txtHastaTelNo
             // 
@@ -269,6 +322,7 @@
             btnHastaKaydet.TabIndex = 15;
             btnHastaKaydet.Text = "Hastayı Kaydet ";
             btnHastaKaydet.UseVisualStyleBackColor = true;
+            btnHastaKaydet.Click += btnHastaKaydet_Click;
             // 
             // lblHastaTelNo
             // 
@@ -321,7 +375,7 @@
             grpGonderilecekNot.Controls.Add(lblHangiDoktor);
             grpGonderilecekNot.Controls.Add(cmbDoktorSec);
             grpGonderilecekNot.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            grpGonderilecekNot.Location = new Point(139, 690);
+            grpGonderilecekNot.Location = new Point(283, 693);
             grpGonderilecekNot.Name = "grpGonderilecekNot";
             grpGonderilecekNot.Size = new Size(743, 292);
             grpGonderilecekNot.TabIndex = 1;
@@ -337,6 +391,7 @@
             btnGonderilenNotlariGuncelle.TabIndex = 2;
             btnGonderilenNotlariGuncelle.Text = "Güncelle";
             btnGonderilenNotlariGuncelle.UseVisualStyleBackColor = false;
+            btnGonderilenNotlariGuncelle.Click += btnGonderilenNotlariGuncelle_Click;
             // 
             // lblGonderilenNotlar
             // 
@@ -366,6 +421,7 @@
             btnNotuGonder.TabIndex = 5;
             btnNotuGonder.Text = "Notu Gönder";
             btnNotuGonder.UseVisualStyleBackColor = true;
+            btnNotuGonder.Click += btnNotuGonder_Click;
             // 
             // rtxNotİcerigi
             // 
@@ -402,6 +458,7 @@
             btnDegisiklikleriKaydet.TabIndex = 2;
             btnDegisiklikleriKaydet.Text = "Seçili Kaydı Düzenle";
             btnDegisiklikleriKaydet.UseVisualStyleBackColor = false;
+            btnDegisiklikleriKaydet.Click += btnDegisiklikleriKaydet_Click;
             // 
             // btnKaydiSil
             // 
@@ -413,6 +470,31 @@
             btnKaydiSil.TabIndex = 3;
             btnKaydiSil.Text = "Seçili Kaydı Sil";
             btnKaydiSil.UseVisualStyleBackColor = false;
+            btnKaydiSil.Click += btnKaydiSil_Click;
+            // 
+            // btnKaydiDuzenle
+            // 
+            btnKaydiDuzenle.BackColor = SystemColors.ActiveCaption;
+            btnKaydiDuzenle.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            btnKaydiDuzenle.Location = new Point(34, 671);
+            btnKaydiDuzenle.Name = "btnKaydiDuzenle";
+            btnKaydiDuzenle.Size = new Size(180, 41);
+            btnKaydiDuzenle.TabIndex = 4;
+            btnKaydiDuzenle.Text = "Kaydı Düzenle ";
+            btnKaydiDuzenle.UseVisualStyleBackColor = false;
+            btnKaydiDuzenle.Click += btnKaydiDuzenle_Click;
+            // 
+            // btnKaydıSilRandevu
+            // 
+            btnKaydıSilRandevu.BackColor = SystemColors.ActiveCaption;
+            btnKaydıSilRandevu.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            btnKaydıSilRandevu.Location = new Point(34, 722);
+            btnKaydıSilRandevu.Name = "btnKaydıSilRandevu";
+            btnKaydıSilRandevu.Size = new Size(122, 43);
+            btnKaydıSilRandevu.TabIndex = 5;
+            btnKaydıSilRandevu.Text = "Kaydı Sil ";
+            btnKaydıSilRandevu.UseVisualStyleBackColor = false;
+            btnKaydıSilRandevu.Click += btnKaydıSilRandevu_Click;
             // 
             // frmSekrerterinSayfasi
             // 
@@ -420,6 +502,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             ClientSize = new Size(1050, 1009);
+            Controls.Add(btnKaydıSilRandevu);
+            Controls.Add(btnKaydiDuzenle);
             Controls.Add(btnKaydiSil);
             Controls.Add(btnDegisiklikleriKaydet);
             Controls.Add(grpGonderilecekNot);
@@ -476,5 +560,11 @@
         private Button btnHastaListesiYenile;
         private Button btnDegisiklikleriKaydet;
         private Button btnKaydiSil;
+        private ComboBox cmbBransSec;
+        private Label lblBransıSec;
+        private Label lblRandevuSaati;
+        private MaskedTextBox mtxtRandevuSaat;
+        private Button btnKaydiDuzenle;
+        private Button btnKaydıSilRandevu;
     }
 }
