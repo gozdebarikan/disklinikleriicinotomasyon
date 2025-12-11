@@ -35,6 +35,8 @@
             btnNotlariYenile = new Button();
             dgvSekreterNotlari = new DataGridView();
             grpMuayeneKayitlari = new GroupBox();
+            txtİslemYapilanDis = new TextBox();
+            lblİslemYapilanDis = new Label();
             btnTabloDegisiklikleriniKaydet = new Button();
             btnMuayeneYenile = new Button();
             lblGecmisMuayeneListesi = new Label();
@@ -47,7 +49,7 @@
             lblTani = new Label();
             txtTani = new TextBox();
             lblHastaSikayeti = new Label();
-            textBox1 = new TextBox();
+            txtHastaSİkayet = new TextBox();
             lblMevcutHastalar = new Label();
             cmbMevcutHastalar = new ComboBox();
             grpDoktorRandevulari.SuspendLayout();
@@ -79,6 +81,7 @@
             btnRandevuYenile.TabIndex = 1;
             btnRandevuYenile.Text = "Yenile";
             btnRandevuYenile.UseVisualStyleBackColor = true;
+            btnRandevuYenile.Click += btnRandevuYenile_Click;
             // 
             // dgvDoktorRandevulari
             // 
@@ -89,6 +92,7 @@
             dgvDoktorRandevulari.RowHeadersWidth = 62;
             dgvDoktorRandevulari.Size = new Size(350, 216);
             dgvDoktorRandevulari.TabIndex = 0;
+            dgvDoktorRandevulari.CellContentClick += dgvDoktorRandevulari_CellContentClick;
             // 
             // grpSekreterinNotlari
             // 
@@ -125,6 +129,8 @@
             // grpMuayeneKayitlari
             // 
             grpMuayeneKayitlari.BackColor = SystemColors.ActiveCaption;
+            grpMuayeneKayitlari.Controls.Add(txtİslemYapilanDis);
+            grpMuayeneKayitlari.Controls.Add(lblİslemYapilanDis);
             grpMuayeneKayitlari.Controls.Add(btnTabloDegisiklikleriniKaydet);
             grpMuayeneKayitlari.Controls.Add(btnMuayeneYenile);
             grpMuayeneKayitlari.Controls.Add(lblGecmisMuayeneListesi);
@@ -137,40 +143,59 @@
             grpMuayeneKayitlari.Controls.Add(lblTani);
             grpMuayeneKayitlari.Controls.Add(txtTani);
             grpMuayeneKayitlari.Controls.Add(lblHastaSikayeti);
-            grpMuayeneKayitlari.Controls.Add(textBox1);
+            grpMuayeneKayitlari.Controls.Add(txtHastaSİkayet);
             grpMuayeneKayitlari.Controls.Add(lblMevcutHastalar);
             grpMuayeneKayitlari.Controls.Add(cmbMevcutHastalar);
             grpMuayeneKayitlari.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 162);
             grpMuayeneKayitlari.Location = new Point(28, 447);
             grpMuayeneKayitlari.Name = "grpMuayeneKayitlari";
-            grpMuayeneKayitlari.Size = new Size(937, 485);
+            grpMuayeneKayitlari.Size = new Size(937, 550);
             grpMuayeneKayitlari.TabIndex = 2;
             grpMuayeneKayitlari.TabStop = false;
             grpMuayeneKayitlari.Text = "Muayene Kaydı";
             // 
+            // txtİslemYapilanDis
+            // 
+            txtİslemYapilanDis.Location = new Point(257, 271);
+            txtİslemYapilanDis.Name = "txtİslemYapilanDis";
+            txtİslemYapilanDis.Size = new Size(155, 34);
+            txtİslemYapilanDis.TabIndex = 15;
+            // 
+            // lblİslemYapilanDis
+            // 
+            lblİslemYapilanDis.AutoSize = true;
+            lblİslemYapilanDis.BackColor = SystemColors.ButtonHighlight;
+            lblİslemYapilanDis.Location = new Point(38, 271);
+            lblİslemYapilanDis.Name = "lblİslemYapilanDis";
+            lblİslemYapilanDis.Size = new Size(176, 28);
+            lblİslemYapilanDis.TabIndex = 14;
+            lblİslemYapilanDis.Text = "İşlem Yapılan Diş :";
+            // 
             // btnTabloDegisiklikleriniKaydet
             // 
-            btnTabloDegisiklikleriniKaydet.Location = new Point(660, 422);
+            btnTabloDegisiklikleriniKaydet.Location = new Point(651, 386);
             btnTabloDegisiklikleriniKaydet.Name = "btnTabloDegisiklikleriniKaydet";
             btnTabloDegisiklikleriniKaydet.Size = new Size(227, 39);
             btnTabloDegisiklikleriniKaydet.TabIndex = 13;
             btnTabloDegisiklikleriniKaydet.Text = "Değişiklikleri Kaydet ";
             btnTabloDegisiklikleriniKaydet.UseVisualStyleBackColor = true;
+            btnTabloDegisiklikleriniKaydet.Click += btnTabloDegisiklikleriniKaydet_Click;
             // 
             // btnMuayeneYenile
             // 
-            btnMuayeneYenile.Location = new Point(729, 382);
+            btnMuayeneYenile.Location = new Point(720, 343);
             btnMuayeneYenile.Name = "btnMuayeneYenile";
             btnMuayeneYenile.Size = new Size(158, 34);
             btnMuayeneYenile.TabIndex = 3;
             btnMuayeneYenile.Text = "Listeyi Yenile ";
             btnMuayeneYenile.UseVisualStyleBackColor = true;
+            btnMuayeneYenile.Click += btnMuayeneYenile_Click;
             // 
             // lblGecmisMuayeneListesi
             // 
             lblGecmisMuayeneListesi.AutoSize = true;
             lblGecmisMuayeneListesi.BackColor = SystemColors.ButtonHighlight;
-            lblGecmisMuayeneListesi.Location = new Point(527, 107);
+            lblGecmisMuayeneListesi.Location = new Point(518, 62);
             lblGecmisMuayeneListesi.Name = "lblGecmisMuayeneListesi";
             lblGecmisMuayeneListesi.Size = new Size(246, 28);
             lblGecmisMuayeneListesi.TabIndex = 12;
@@ -180,27 +205,29 @@
             // 
             dgvMuayeneGecmisiListesi.BackgroundColor = SystemColors.ButtonHighlight;
             dgvMuayeneGecmisiListesi.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvMuayeneGecmisiListesi.Location = new Point(527, 151);
+            dgvMuayeneGecmisiListesi.Location = new Point(518, 112);
             dgvMuayeneGecmisiListesi.Name = "dgvMuayeneGecmisiListesi";
             dgvMuayeneGecmisiListesi.RowHeadersWidth = 62;
             dgvMuayeneGecmisiListesi.Size = new Size(360, 225);
             dgvMuayeneGecmisiListesi.TabIndex = 3;
+            dgvMuayeneGecmisiListesi.CellContentClick += dgvMuayeneGecmisiListesi_CellContentClick;
             // 
             // btnKaydiTamamla
             // 
-            btnKaydiTamamla.Location = new Point(341, 416);
+            btnKaydiTamamla.Location = new Point(323, 479);
             btnKaydiTamamla.Name = "btnKaydiTamamla";
             btnKaydiTamamla.Size = new Size(112, 34);
             btnKaydiTamamla.TabIndex = 10;
             btnKaydiTamamla.Text = "Kaydet";
             btnKaydiTamamla.UseVisualStyleBackColor = true;
+            btnKaydiTamamla.Click += btnKaydiTamamla_Click;
             // 
             // cmbTedaviDurumu
             // 
             cmbTedaviDurumu.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbTedaviDurumu.FormattingEnabled = true;
             cmbTedaviDurumu.Items.AddRange(new object[] { "Devam ediyor.", "Tamamlandı.", "Sevk edildi.", "Beklemede ", "İptal edildi." });
-            cmbTedaviDurumu.Location = new Point(262, 356);
+            cmbTedaviDurumu.Location = new Point(253, 422);
             cmbTedaviDurumu.Name = "cmbTedaviDurumu";
             cmbTedaviDurumu.Size = new Size(182, 36);
             cmbTedaviDurumu.TabIndex = 9;
@@ -209,7 +236,7 @@
             // 
             lblTedaviDurumu.AutoSize = true;
             lblTedaviDurumu.BackColor = SystemColors.ButtonHighlight;
-            lblTedaviDurumu.Location = new Point(38, 364);
+            lblTedaviDurumu.Location = new Point(38, 430);
             lblTedaviDurumu.Name = "lblTedaviDurumu";
             lblTedaviDurumu.Size = new Size(161, 28);
             lblTedaviDurumu.TabIndex = 8;
@@ -219,7 +246,7 @@
             // 
             lblDoktorRecete.AutoSize = true;
             lblDoktorRecete.BackColor = SystemColors.ButtonHighlight;
-            lblDoktorRecete.Location = new Point(38, 279);
+            lblDoktorRecete.Location = new Point(38, 343);
             lblDoktorRecete.Name = "lblDoktorRecete";
             lblDoktorRecete.Size = new Size(89, 28);
             lblDoktorRecete.TabIndex = 7;
@@ -227,7 +254,7 @@
             // 
             // rtxtDoktorReçete
             // 
-            rtxtDoktorReçete.Location = new Point(262, 257);
+            rtxtDoktorReçete.Location = new Point(253, 343);
             rtxtDoktorReçete.Name = "rtxtDoktorReçete";
             rtxtDoktorReçete.Size = new Size(191, 50);
             rtxtDoktorReçete.TabIndex = 6;
@@ -237,7 +264,7 @@
             // 
             lblTani.AutoSize = true;
             lblTani.BackColor = SystemColors.ButtonHighlight;
-            lblTani.Location = new Point(38, 202);
+            lblTani.Location = new Point(38, 212);
             lblTani.Name = "lblTani";
             lblTani.Size = new Size(59, 28);
             lblTani.TabIndex = 5;
@@ -245,7 +272,7 @@
             // 
             // txtTani
             // 
-            txtTani.Location = new Point(262, 196);
+            txtTani.Location = new Point(257, 212);
             txtTani.Name = "txtTani";
             txtTani.Size = new Size(150, 34);
             txtTani.TabIndex = 4;
@@ -254,18 +281,18 @@
             // 
             lblHastaSikayeti.AutoSize = true;
             lblHastaSikayeti.BackColor = SystemColors.ButtonHighlight;
-            lblHastaSikayeti.Location = new Point(38, 139);
+            lblHastaSikayeti.Location = new Point(38, 142);
             lblHastaSikayeti.Name = "lblHastaSikayeti";
             lblHastaSikayeti.Size = new Size(150, 28);
             lblHastaSikayeti.TabIndex = 3;
             lblHastaSikayeti.Text = "Hasta Şikayeti :";
             // 
-            // textBox1
+            // txtHastaSİkayet
             // 
-            textBox1.Location = new Point(262, 133);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 34);
-            textBox1.TabIndex = 2;
+            txtHastaSİkayet.Location = new Point(257, 142);
+            txtHastaSİkayet.Name = "txtHastaSİkayet";
+            txtHastaSİkayet.Size = new Size(150, 34);
+            txtHastaSİkayet.TabIndex = 2;
             // 
             // lblMevcutHastalar
             // 
@@ -284,6 +311,7 @@
             cmbMevcutHastalar.Name = "cmbMevcutHastalar";
             cmbMevcutHastalar.Size = new Size(150, 36);
             cmbMevcutHastalar.TabIndex = 0;
+            cmbMevcutHastalar.SelectedIndexChanged += cmbMevcutHastalar_SelectedIndexChanged;
             // 
             // frmDoktorSayfasi
             // 
@@ -320,7 +348,7 @@
         private Label lblTani;
         private TextBox txtTani;
         private Label lblHastaSikayeti;
-        private TextBox textBox1;
+        private TextBox txtHastaSİkayet;
         private RichTextBox rtxtDoktorReçete;
         private Label lblDoktorRecete;
         private Button btnKaydiTamamla;
@@ -330,5 +358,7 @@
         private DataGridView dgvMuayeneGecmisiListesi;
         private Button btnMuayeneYenile;
         private Button btnTabloDegisiklikleriniKaydet;
+        private TextBox txtİslemYapilanDis;
+        private Label lblİslemYapilanDis;
     }
 }

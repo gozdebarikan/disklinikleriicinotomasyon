@@ -18,6 +18,9 @@ namespace disklinikleriicinotomasyon
         int secilenHastaID = 0;
         int secilenRandevuID = 0;
 
+
+
+
         public frmSekrerterinSayfasi(int gelenID)
         {
             InitializeComponent();
@@ -104,21 +107,28 @@ namespace disklinikleriicinotomasyon
         private void btnRandevuEkle_Click(object sender, EventArgs e)
         {
 
-            string hastaTC = txtHastaTCNo.Text;
+            string hastaTC = txtHastaTCNo.Text.Trim();
             string secilenBrans = cmbBransSec.Text;
 
+            int doktorID = 0; 
 
-            if (cmbDoktorSecimi.SelectedValue == null)
+            if (cmbDoktorSecimi.SelectedValue != null)
             {
-                MessageBox.Show("Lütfen bir doktor seçiniz.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                
+                int.TryParse(cmbDoktorSecimi.SelectedValue.ToString(), out doktorID);
+            }
+
+          
+            if (doktorID == 0)
+            {
+                MessageBox.Show("Lütfen geçerli bir doktor seçiniz. Doktor ID ataması başarısız.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            int doktorID = (int)cmbDoktorSecimi.SelectedValue;
-
-
             DateTime randevuTarihi = dtpRandevuTarihi.Value;
             string saatStr = mtxtRandevuSaat.Text;
+            string randevuDurumu = "Aktif";
+
 
             if (!TimeSpan.TryParse(saatStr, out TimeSpan randevuSaati))
             {
@@ -149,13 +159,14 @@ namespace disklinikleriicinotomasyon
                         return;
                     }
 
-                    string randevuEkleSorgusu = "INSERT INTO RandevularınTbl (HastaTC, DoktorID, Brans, RandevuTarihi) VALUES (@hTC, @dID, @brans, @tarih)";
+                    string randevuEkleSorgusu = "INSERT INTO RandevularınTbl (HastaTC, DoktorID, Brans, RandevuTarihi, Durum) VALUES (@hTC, @dID, @brans, @tarih, @durum)";
 
                     SqlCommand randevuKomut = new SqlCommand(randevuEkleSorgusu, connection);
                     randevuKomut.Parameters.AddWithValue("@hTC", hastaTC);
                     randevuKomut.Parameters.AddWithValue("@dID", doktorID);
                     randevuKomut.Parameters.AddWithValue("@brans", secilenBrans);
                     randevuKomut.Parameters.AddWithValue("@tarih", tamRandevuTarihi);
+                    randevuKomut.Parameters.AddWithValue("@durum", randevuDurumu);
 
                     randevuKomut.ExecuteNonQuery();
 
