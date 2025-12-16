@@ -1,0 +1,67 @@
+[2025-12-14 16:47:10] [INFO] Appointment created, attempting to send mail... {"appt_id":1,"patient_id":1}
+[2025-12-14 16:47:34] [INFO] Mail sent successfully to akifcebe31@gmail.com {"subject":"Randevu Talebiniz Oluşturuldu"}
+[2025-12-14 16:47:34] [INFO] User Action: Appointment booked {"user_id":1,"appointment_id":1,"doctor_id":1,"date":"2025-12-21"}
+[2025-12-14 18:19:15] [INFO] Mail sent successfully to akifcebe5859@gmail.com {"subject":"DentalApp Test 18:19:08"}
+[2025-12-14 18:21:25] [INFO] Mail sent successfully to akifcebe5859@gmail.com {"subject":"DentalApp Test 18:21:21"}
+[2025-12-14 18:23:07] [INFO] Appointment created, attempting to send mail... {"appt_id":2,"patient_id":1}
+[2025-12-14 18:23:07] [INFO] Mail prep - Patient data {"patient_email":"akifcebe31@gmail.com","patient_name":"akif Cebe"}
+[2025-12-14 18:23:07] [INFO] Mail prep - Doctor data {"doctor_name":"Dr. Ahmet Yılmaz","doctor_spec":"Ortodonti"}
+[2025-12-14 18:23:09] [INFO] Mail sent successfully to akifcebe31@gmail.com {"subject":"Randevu Talebiniz Oluşturuldu"}
+[2025-12-14 18:23:09] [INFO] Mail send result: SUCCESS
+[2025-12-14 18:23:11] [INFO] Appointment cancelled, preparing to send mail... {"appointment_id":2,"patient_id":1}
+[2025-12-14 18:23:11] [INFO] Cancel mail prep {"patient_email":"akifcebe31@gmail.com","doctor_name":"Dr. Ahmet Yılmaz"}
+[2025-12-14 18:23:16] [INFO] Mail sent successfully to akifcebe31@gmail.com {"subject":"Randevu Talebiniz İptal Edildi"}
+[2025-12-14 18:23:16] [INFO] Cancel mail send result: SUCCESS
+[2025-12-14 18:35:52] [INFO] Appointment created, attempting to send mail... {"appt_id":3,"patient_id":1}
+[2025-12-14 18:35:52] [INFO] Mail prep - Patient data {"patient_email":"akifcebe31@gmail.com","patient_name":"akif Cebe"}
+[2025-12-14 18:35:52] [INFO] Mail prep - Doctor data {"doctor_name":"Dr. Ahmet Yılmaz","doctor_spec":"Ortodonti"}
+[2025-12-14 18:35:55] [INFO] Mail sent successfully to akifcebe31@gmail.com {"subject":"Randevu Talebiniz Oluşturuldu"}
+[2025-12-14 18:35:55] [INFO] Mail send result: SUCCESS
+[2025-12-14 18:35:57] [INFO] Appointment cancelled, preparing to send mail... {"appointment_id":3,"patient_id":1}
+[2025-12-14 18:35:57] [INFO] Cancel mail prep {"patient_email":"akifcebe31@gmail.com","doctor_name":"Dr. Ahmet Yılmaz"}
+[2025-12-14 18:36:01] [INFO] Mail sent successfully to akifcebe31@gmail.com {"subject":"Randevu Talebiniz İptal Edildi"}
+[2025-12-14 18:36:01] [INFO] Cancel mail send result: SUCCESS
+[2025-12-14 19:28:59] [INFO] Appointment created, attempting to send mail... {"appt_id":4,"patient_id":6}
+[2025-12-14 19:28:59] [INFO] Mail prep - Patient data {"patient_email":"akifcebe58@gmail.com","patient_name":"akif dene"}
+[2025-12-14 19:28:59] [INFO] Mail prep - Doctor data {"doctor_name":"Dr. Ahmet Yılmaz","doctor_spec":"Ortodonti"}
+[2025-12-14 19:29:03] [INFO] Mail sent successfully to akifcebe58@gmail.com {"subject":"Randevu Talebiniz Oluşturuldu"}
+[2025-12-14 19:29:03] [INFO] Mail send result: SUCCESS
+[2025-12-14 19:29:03] [INFO] User Action: Appointment booked {"user_id":6,"appointment_id":4,"doctor_id":1,"date":"2025-12-17"}
+[2025-12-14 19:29:31] [INFO] Appointment cancelled, preparing to send mail... {"appointment_id":4,"patient_id":6}
+[2025-12-14 19:29:31] [INFO] Cancel mail prep {"patient_email":"akifcebe58@gmail.com","doctor_name":"Dr. Ahmet Yılmaz"}
+[2025-12-14 19:29:37] [INFO] Mail sent successfully to akifcebe58@gmail.com {"subject":"Randevu Talebiniz İptal Edildi"}
+[2025-12-14 19:29:37] [INFO] Cancel mail send result: SUCCESS
+[2025-12-14 19:29:37] [INFO] User Action: Appointment cancelled {"user_id":6,"appointment_id":4}
+[2025-12-14 19:40:46] [INFO] Appointment created, attempting to send mail... {"appt_id":5,"patient_id":6}
+[2025-12-14 19:40:46] [INFO] Mail prep - Patient data {"patient_email":"akifcebe58@gmail.com","patient_name":"akif dene"}
+[2025-12-14 19:40:46] [INFO] Mail prep - Doctor data {"doctor_name":"Dr. Ahmet Yılmaz","doctor_spec":"Ortodonti"}
+[2025-12-14 19:40:49] [INFO] Mail sent successfully to akifcebe58@gmail.com {"subject":"Randevu Talebiniz Oluşturuldu"}
+[2025-12-14 19:40:49] [INFO] Mail send result: SUCCESS
+[2025-12-14 19:40:49] [INFO] User Action: Appointment booked {"user_id":6,"appointment_id":5,"doctor_id":1,"date":"2025-12-18"}
+[2025-12-14 19:55:18] [INFO] Appointment cancelled, preparing to send mail... {"appointment_id":5,"patient_id":6}
+[2025-12-14 19:55:18] [INFO] Cancel mail prep {"patient_email":"akifcebe58@gmail.com","doctor_name":"Dr. Ahmet Yılmaz"}
+[2025-12-14 19:55:20] [INFO] Mail sent successfully to akifcebe58@gmail.com {"subject":"Randevu Talebiniz İptal Edildi"}
+[2025-12-14 19:55:20] [INFO] Cancel mail send result: SUCCESS
+[2025-12-14 19:55:20] [INFO] User Action: Appointment cancelled {"user_id":6,"appointment_id":5}
+[2025-12-14 19:55:24] [INFO] Appointment created, attempting to send mail... {"appt_id":6,"patient_id":6}
+[2025-12-14 19:55:24] [INFO] Mail prep - Patient data {"patient_email":"akifcebe58@gmail.com","patient_name":"akif dene"}
+[2025-12-14 19:55:24] [INFO] Mail prep - Doctor data {"doctor_name":"Dr. Ahmet Yılmaz","doctor_spec":"Ortodonti"}
+[2025-12-14 19:55:26] [INFO] Mail sent successfully to akifcebe58@gmail.com {"subject":"Randevu Talebiniz Oluşturuldu"}
+[2025-12-14 19:55:26] [INFO] Mail send result: SUCCESS
+[2025-12-14 19:55:26] [INFO] User Action: Appointment booked {"user_id":6,"appointment_id":6,"doctor_id":1,"date":"2025-12-17"}
+[2025-12-14 20:14:37] [INFO] Appointment cancelled, preparing to send mail... {"appointment_id":6,"patient_id":6}
+[2025-12-14 20:14:37] [INFO] Cancel mail prep {"patient_email":"akifcebe58@gmail.com","doctor_name":"Dr. Ahmet Yılmaz"}
+[2025-12-14 20:14:41] [INFO] Mail sent successfully to akifcebe58@gmail.com {"subject":"Randevu Talebiniz İptal Edildi"}
+[2025-12-14 20:14:41] [INFO] Cancel mail send result: SUCCESS
+[2025-12-14 20:14:41] [INFO] User Action: Appointment cancelled {"user_id":6,"appointment_id":6}
+[2025-12-14 20:14:59] [INFO] Appointment created, attempting to send mail... {"appt_id":7,"patient_id":6}
+[2025-12-14 20:14:59] [INFO] Mail prep - Patient data {"patient_email":"akifcebe58@gmail.com","patient_name":"akif dene"}
+[2025-12-14 20:14:59] [INFO] Mail prep - Doctor data {"doctor_name":"Dr. Ahmet Yılmaz","doctor_spec":"Ortodonti"}
+[2025-12-14 20:15:02] [INFO] Mail sent successfully to akifcebe58@gmail.com {"subject":"Randevu Talebiniz Oluşturuldu"}
+[2025-12-14 20:15:02] [INFO] Mail send result: SUCCESS
+[2025-12-14 20:15:02] [INFO] User Action: Appointment booked {"user_id":6,"appointment_id":7,"doctor_id":1,"date":"2025-12-16"}
+[2025-12-14 20:15:18] [INFO] Appointment cancelled, preparing to send mail... {"appointment_id":7,"patient_id":6}
+[2025-12-14 20:15:18] [INFO] Cancel mail prep {"patient_email":"akifcebe58@gmail.com","doctor_name":"Dr. Ahmet Yılmaz"}
+[2025-12-14 20:15:21] [INFO] Mail sent successfully to akifcebe58@gmail.com {"subject":"Randevu Talebiniz İptal Edildi"}
+[2025-12-14 20:15:21] [INFO] Cancel mail send result: SUCCESS
+[2025-12-14 20:15:21] [INFO] User Action: Appointment cancelled {"user_id":6,"appointment_id":7}

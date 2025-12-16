@@ -1,0 +1,12 @@
+[2025-12-13 21:43:57] [INFO] Appointment created, attempting to send mail... {"appt_id":17,"patient_id":1}
+[2025-12-13 21:44:02] [INFO] Mail sent successfully to akifcebe31@gmail.com {"subject":"Randevu Talebiniz Oluşturuldu"}
+[2025-12-13 21:44:02] [INFO] Mail send result: SUCCESS
+[2025-12-13 21:59:08] [INFO] Appointment created, attempting to send mail... {"appt_id":18,"patient_id":1}
+[2025-12-13 21:59:19] [INFO] Mail sent successfully to akifcebe31@gmail.com {"subject":"Randevu Talebiniz Oluşturuldu"}
+[2025-12-13 21:59:19] [INFO] Mail send result: SUCCESS
+[2025-12-13 21:59:19] [INFO] Appointment created, attempting to send mail... {"appt_id":19,"patient_id":1}
+[2025-12-13 21:59:22] [INFO] Mail sent successfully to akifcebe31@gmail.com {"subject":"Randevu Talebiniz Oluşturuldu"}
+[2025-12-13 21:59:22] [INFO] Mail send result: SUCCESS
+[2025-12-13 22:12:55] [INFO] Appointment created, attempting to send mail... {"appt_id":20,"patient_id":1}
+[2025-12-13 22:13:05] [INFO] Mail sent successfully to akifcebe31@gmail.com {"subject":"Randevu Talebiniz Oluşturuldu"}
+[2025-12-13 22:13:05] [INFO] Mail send result: SUCCESS

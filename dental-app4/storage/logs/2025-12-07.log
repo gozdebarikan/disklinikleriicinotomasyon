@@ -1,0 +1,30 @@
+[2025-12-07 16:45:12] [INFO] User Action: Appointment booked {"user_id":1,"appointment_id":4,"doctor_id":1,"date":"2025-12-08"}
+[2025-12-07 16:45:17] [INFO] User Action: Appointment booked {"user_id":1,"appointment_id":5,"doctor_id":1,"date":"2025-12-08"}
+[2025-12-07 16:45:23] [INFO] User Action: Appointment booked {"user_id":1,"appointment_id":6,"doctor_id":2,"date":"2025-12-08"}
+[2025-12-07 16:46:05] [INFO] User Action: Appointment cancelled {"user_id":1,"appointment_id":5}
+[2025-12-07 16:46:07] [INFO] User Action: Appointment cancelled {"user_id":1,"appointment_id":6}
+[2025-12-07 16:46:08] [INFO] User Action: Appointment cancelled {"user_id":1,"appointment_id":4}
+[2025-12-07 16:47:44] [INFO] User Action: Appointment booked {"user_id":1,"appointment_id":7,"doctor_id":1,"date":"2025-12-09"}
+[2025-12-07 16:47:46] [INFO] User Action: Appointment cancelled {"user_id":1,"appointment_id":7}
+[2025-12-07 17:06:56] [INFO] User Action: Appointment booked {"user_id":1,"appointment_id":8,"doctor_id":3,"date":"2025-12-09"}
+[2025-12-07 17:07:16] [WARNING] Failed to book appointment {"user_id":1,"error":"Zaten aktif bir randevunuz var. Yeni randevu almak için önce mevcut randevunuzu iptal edin."}
+[2025-12-07 17:07:31] [INFO] User Action: Appointment cancelled {"user_id":1,"appointment_id":8}
+[2025-12-07 17:07:51] [INFO] User Action: Appointment booked {"user_id":1,"appointment_id":9,"doctor_id":1,"date":"2025-12-08"}
+[2025-12-07 17:08:05] [WARNING] Failed to book appointment {"user_id":1,"error":"Zaten aktif bir randevunuz var. Yeni randevu almak için önce mevcut randevunuzu iptal edin."}
+[2025-12-07 17:34:04] [WARNING] Failed to book appointment {"user_id":1,"error":"Zaten aktif bir randevunuz var. Yeni randevu almak için önce mevcut randevunuzu iptal edin."}
+[2025-12-07 17:50:17] [INFO] User Action: Appointment booked {"user_id":5,"appointment_id":10,"doctor_id":1,"date":"2025-12-08"}
+[2025-12-07 17:50:22] [WARNING] Failed to book appointment {"user_id":5,"error":"Zaten aktif bir randevunuz var. Yeni randevu almak için önce mevcut randevunuzu iptal edin."}
+[2025-12-07 17:51:44] [INFO] User Action: Appointment cancelled {"user_id":5,"appointment_id":10}
+[2025-12-07 17:55:57] [INFO] User Action: Appointment booked {"user_id":5,"appointment_id":11,"doctor_id":1,"date":"2025-12-09"}
+[2025-12-07 17:59:52] [INFO] User Action: Appointment cancelled {"user_id":5,"appointment_id":11}
+[2025-12-07 18:00:04] [INFO] User Action: Appointment booked {"user_id":5,"appointment_id":12,"doctor_id":1,"date":"2025-12-09"}
+[2025-12-07 18:03:41] [INFO] User Action: Appointment cancelled {"user_id":5,"appointment_id":12}
+[2025-12-07 18:04:04] [INFO] User Action: Appointment cancelled {"user_id":5,"appointment_id":12}
+[2025-12-07 18:07:30] [INFO] User Action: Appointment booked {"user_id":5,"appointment_id":13,"doctor_id":1,"date":"2025-12-09"}
+[2025-12-07 18:07:45] [INFO] User Action: Appointment cancelled {"user_id":5,"appointment_id":13}
+[2025-12-07 18:11:33] [INFO] User Action: Appointment booked {"user_id":5,"appointment_id":14,"doctor_id":1,"date":"2025-12-10"}
+[2025-12-07 18:12:19] [WARNING] Failed to book appointment {"user_id":5,"error":"Zaten aktif bir randevunuz var. Yeni randevu almak için önce mevcut randevunuzu iptal edin."}
+[2025-12-07 18:13:13] [WARNING] Failed to book appointment {"user_id":5,"error":"Zaten aktif bir randevunuz var. Yeni randevu almak için önce mevcut randevunuzu iptal edin."}
+[2025-12-07 18:13:17] [INFO] User Action: Appointment cancelled {"user_id":5,"appointment_id":14}
+[2025-12-07 18:14:44] [INFO] User Action: Appointment booked {"user_id":5,"appointment_id":15,"doctor_id":3,"date":"2025-12-11"}
+[2025-12-07 18:14:51] [INFO] User Action: Appointment cancelled {"user_id":5,"appointment_id":15}

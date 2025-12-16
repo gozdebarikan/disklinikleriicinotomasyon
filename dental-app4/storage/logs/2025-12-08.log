@@ -1,0 +1,4 @@
+[2025-12-08 22:03:37] [WARNING] Failed to book appointment {"user_id":1,"error":"Zaten aktif bir randevunuz var. Yeni randevu almak için önce mevcut randevunuzu iptal edin."}
+[2025-12-08 22:03:40] [WARNING] Failed to cancel appointment {"user_id":1,"appointment_id":9,"error":"Failed to cancel appointment: Randevuya 1 saatten az kaldığında iptal edilemez"}
+[2025-12-08 22:03:44] [WARNING] Failed to cancel appointment {"user_id":1,"appointment_id":9,"error":"Failed to cancel appointment: Randevuya 1 saatten az kaldığında iptal edilemez"}
+[2025-12-08 22:17:33] [WARNING] Failed to cancel appointment {"user_id":1,"appointment_id":9,"error":"Failed to cancel appointment: Randevuya 1 saatten az kaldığında iptal edilemez"}
