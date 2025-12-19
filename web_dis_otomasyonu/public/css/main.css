@@ -1,0 +1,39 @@
+:root { --primary: #2563eb; --bg: #f3f4f6; --card: #fff; --text: #1f2937; --danger: #dc2626; }
+[data-theme="dark"] { --primary: #60a5fa; --bg: #111827; --card: #1f2937; --text: #f9fafb; --danger: #ef4444; }
+
+body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 0; transition: 0.3s; }
+.app { display: flex; min-height: 100vh; }
+.sidebar { width: 250px; background: var(--card); padding: 20px; border-right: 1px solid #ccc; display: flex; flex-direction: column; }
+.main { flex: 1; padding: 40px; }
+
+/* Kartlar */
+.card { background: var(--card); padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; }
+
+/* Navigasyon */
+.nav-link { display: block; padding: 12px; color: var(--text); text-decoration: none; border-radius: 8px; margin-bottom: 5px; }
+.nav-link:hover, .nav-link.active { background: var(--primary); color: white; }
+
+/* Butonlar & Inputlar */
+.btn { width: 100%; padding: 12px; background: var(--primary); color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 10px; }
+.btn-danger { background: var(--danger); }
+input, select { width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; }
+
+/* Login */
+.login-wrap { display: flex; justify-content: center; align-items: center; height: 100vh; background: var(--primary); }
+.login-box { width: 400px; text-align: center; }
+
+/* Takvim Grid */
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px; margin-top: 20px; }
+.day-box { padding: 20px; border: 2px solid #ddd; border-radius: 10px; cursor: pointer; text-align: center; transition: 0.2s; }
+.day-box:hover { border-color: var(--primary); transform: translateY(-5px); }
+.day-box.full { border-color: var(--danger); background: rgba(220, 38, 38, 0.1); cursor: not-allowed; }
+.day-box.avail { border-color: #10b981; background: rgba(16, 185, 129, 0.1); }
+
+/* Modal */
+.modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); display: flex; justify-content: center; align-items: center; z-index: 999; }
+.modal.hidden { display: none; }
+.modal-content { background: var(--card); padding: 30px; border-radius: 12px; width: 350px; text-align: center; }
+.close { float: right; cursor: pointer; font-size: 20px; }
+.slots { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 20px; }
+.time-btn { padding: 8px 15px; border: 1px solid #ccc; border-radius: 5px; cursor: pointer; }
+.time-btn:hover { background: var(--primary); color: white; }

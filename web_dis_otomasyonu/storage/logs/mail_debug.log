@@ -1,0 +1,88 @@
+[2025-12-17 22:27:35] === Mail Send Attempt ===
+[2025-12-17 22:27:35] To: akifcebe58@gmail.com
+[2025-12-17 22:27:35] Subject: Randevu Talebiniz Oluşturuldu
+[2025-12-17 22:27:35] Driver: smtp
+[2025-12-17 22:27:35] Host: smtp.gmail.com
+[2025-12-17 22:27:35] Port: 587
+[2025-12-17 22:27:35] Username: ***SET***
+[2025-12-17 22:27:35] Password: ***SET***
+[2025-12-17 22:27:35] Attempting SMTP send...
+[2025-12-17 22:27:35] Manually loaded PHPMailer from C:\xampp\htdocs\dental-app4\app\Services/../../vendor/phpmailer/src/
+[2025-12-17 22:27:38] SUCCESS: Mail sent to akifcebe58@gmail.com
+[2025-12-17 22:28:04] === Mail Send Attempt ===
+[2025-12-17 22:28:04] To: akifcebe58@gmail.com
+[2025-12-17 22:28:04] Subject: Randevu Talebiniz İptal Edildi
+[2025-12-17 22:28:04] Driver: smtp
+[2025-12-17 22:28:04] Host: smtp.gmail.com
+[2025-12-17 22:28:04] Port: 587
+[2025-12-17 22:28:04] Username: ***SET***
+[2025-12-17 22:28:04] Password: ***SET***
+[2025-12-17 22:28:04] Attempting SMTP send...
+[2025-12-17 22:28:04] Manually loaded PHPMailer from C:\xampp\htdocs\dental-app4\app\Services/../../vendor/phpmailer/src/
+[2025-12-17 22:28:08] SUCCESS: Mail sent to akifcebe58@gmail.com
+[2025-12-17 22:29:50] === Mail Send Attempt ===
+[2025-12-17 22:29:50] To: akifcebe58@gmail.com
+[2025-12-17 22:29:50] Subject: Randevu Talebiniz Oluşturuldu
+[2025-12-17 22:29:50] Driver: smtp
+[2025-12-17 22:29:50] Host: smtp.gmail.com
+[2025-12-17 22:29:50] Port: 587
+[2025-12-17 22:29:50] Username: ***SET***
+[2025-12-17 22:29:50] Password: ***SET***
+[2025-12-17 22:29:50] Attempting SMTP send...
+[2025-12-17 22:29:50] Manually loaded PHPMailer from C:\xampp\htdocs\dental-app4\app\Services/../../vendor/phpmailer/src/
+[2025-12-17 22:29:52] SUCCESS: Mail sent to akifcebe58@gmail.com
+[2025-12-17 22:31:52] === Mail Send Attempt ===
+[2025-12-17 22:31:52] To: akifcebe58@gmail.com
+[2025-12-17 22:31:52] Subject: Randevu Talebiniz İptal Edildi
+[2025-12-17 22:31:52] Driver: smtp
+[2025-12-17 22:31:52] Host: smtp.gmail.com
+[2025-12-17 22:31:52] Port: 587
+[2025-12-17 22:31:52] Username: ***SET***
+[2025-12-17 22:31:52] Password: ***SET***
+[2025-12-17 22:31:52] Attempting SMTP send...
+[2025-12-17 22:31:52] Manually loaded PHPMailer from C:\xampp\htdocs\dental-app4\app\Services/../../vendor/phpmailer/src/
+[2025-12-17 22:31:57] SUCCESS: Mail sent to akifcebe58@gmail.com
+[2025-12-17 22:32:00] === Mail Send Attempt ===
+[2025-12-17 22:32:00] To: akifcebe58@gmail.com
+[2025-12-17 22:32:00] Subject: Randevu Talebiniz İptal Edildi
+[2025-12-17 22:32:00] Driver: smtp
+[2025-12-17 22:32:00] Host: smtp.gmail.com
+[2025-12-17 22:32:00] Port: 587
+[2025-12-17 22:32:00] Username: ***SET***
+[2025-12-17 22:32:00] Password: ***SET***
+[2025-12-17 22:32:00] Attempting SMTP send...
+[2025-12-17 22:32:00] Manually loaded PHPMailer from C:\xampp\htdocs\dental-app4\app\Services/../../vendor/phpmailer/src/
+[2025-12-17 22:32:04] SUCCESS: Mail sent to akifcebe58@gmail.com
+[2025-12-17 23:08:09] === Mail Send Attempt ===
+[2025-12-17 23:08:09] To: akifcebe58@gmail.com
+[2025-12-17 23:08:09] Subject: Randevu Talebiniz Oluşturuldu
+[2025-12-17 23:08:09] Driver: smtp
+[2025-12-17 23:08:09] Host: smtp.gmail.com
+[2025-12-17 23:08:09] Port: 587
+[2025-12-17 23:08:09] Username: ***SET***
+[2025-12-17 23:08:09] Password: ***SET***
+[2025-12-17 23:08:09] Attempting SMTP send...
+[2025-12-17 23:08:10] Manually loaded PHPMailer from C:\xampp\htdocs\dental-app4\app\Services/../../vendor/phpmailer/src/
+[2025-12-17 23:08:23] SUCCESS: Mail sent to akifcebe58@gmail.com
+[2025-12-17 23:08:31] === Mail Send Attempt ===
+[2025-12-17 23:08:31] To: akifcebe58@gmail.com
+[2025-12-17 23:08:31] Subject: Randevu Talebiniz İptal Edildi
+[2025-12-17 23:08:31] Driver: smtp
+[2025-12-17 23:08:31] Host: smtp.gmail.com
+[2025-12-17 23:08:31] Port: 587
+[2025-12-17 23:08:31] Username: ***SET***
+[2025-12-17 23:08:31] Password: ***SET***
+[2025-12-17 23:08:31] Attempting SMTP send...
+[2025-12-17 23:08:31] Manually loaded PHPMailer from C:\xampp\htdocs\dental-app4\app\Services/../../vendor/phpmailer/src/
+[2025-12-17 23:08:39] SUCCESS: Mail sent to akifcebe58@gmail.com
+[2025-12-19 15:11:26] === Mail Send Attempt ===
+[2025-12-19 15:11:26] To: akifcebe58@gmail.com
+[2025-12-19 15:11:26] Subject: Randevu Talebiniz Oluşturuldu
+[2025-12-19 15:11:26] Driver: smtp
+[2025-12-19 15:11:26] Host: smtp.gmail.com
+[2025-12-19 15:11:26] Port: 587
+[2025-12-19 15:11:26] Username: ***SET***
+[2025-12-19 15:11:26] Password: ***SET***
+[2025-12-19 15:11:26] Attempting SMTP send...
+[2025-12-19 15:11:26] Manually loaded PHPMailer from C:\xampp\htdocs\dental-app4\app\Services/../../vendor/phpmailer/src/
+[2025-12-19 15:11:29] SUCCESS: Mail sent to akifcebe58@gmail.com

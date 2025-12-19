@@ -1,0 +1,6 @@
+[2025-12-19 15:11:26] [INFO] Appointment created, attempting to send mail... {"appt_id":3,"patient_id":3}
+[2025-12-19 15:11:26] [INFO] Mail prep - Patient data {"patient_email":"akifcebe58@gmail.com","patient_name":"Mehmet Cebe"}
+[2025-12-19 15:11:26] [INFO] Mail prep - Doctor data {"doctor_name":"Ahmet Yılmaz","doctor_spec":"Genel Diş Hekimliği"}
+[2025-12-19 15:11:29] [INFO] Mail sent successfully to akifcebe58@gmail.com {"subject":"Randevu Talebiniz Oluşturuldu"}
+[2025-12-19 15:11:29] [INFO] Mail send result: SUCCESS
+[2025-12-19 15:11:29] [INFO] User Action: Appointment booked {"user_id":3,"appointment_id":3,"doctor_id":1,"date":"2025-12-23"}
